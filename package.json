@@ -1,9 +1,9 @@
 {
-  "name": "es6-string-html",
-  "displayName": "es6-string-html",
-  "description": "Highlight different languages in es6 multiline strings",
-  "version": "1.7.1",
-  "publisher": "Tobermory",
+  "name": "es6-string-css",
+  "displayName": "es6-string-css",
+  "description": "Highlight CSS language in ES6 template literals",
+  "version": "0.0.0",
+  "publisher": "bashmish",
   "icon": "docs/logo.png",
   "engines": {
     "vscode": "^1.19.0"
@@ -13,68 +13,34 @@
     "theme": "light"
   },
   "repository": {
-    "url": "https://github.com/mydesireiscoma/es6-string-html"
+    "url": "https://github.com/bashmish/es6-string-css"
   },
   "bugs": {
-    "url": "https://github.com/mydesireiscoma/es6-string-html/issues"
+    "url": "https://github.com/bashmish/es6-string-css/issues"
   },
-  "main": "./scripts/main",
   "categories": [
-    "Languages"
+    "Programming Languages"
   ],
   "keywords": [
     "javascript",
     "es6",
-    "es6-string-html",
-    "html",
-    "template"
-  ],
-  "activationEvents": [
-    "onCommand:es6stringhtml.insertComment",
-    "onCommand:es6stringhtml.insertTemplate"
+    "css",
+    "lit-css",
+    "lit-html"
   ],
   "contributes": {
-    "commands": [
-      {
-        "command": "es6stringhtml.insertComment",
-        "title": "Insert es6-string-html comment",
-        "category": "HTML"
-      },
-      {
-        "command": "es6stringhtml.insertTemplate",
-        "title": "Insert es6-string-html template",
-        "category": "HTML"
-      }
-    ],
     "grammars": [
       {
         "injectTo": [
           "source.js",
-          "source.js.jsx",
-          "source.jsx",
           "source.ts",
-          "source.tsx",
-          "text.html.basic"
-        ],
-        "scopeName": "inline.es6-html",
-        "path": "./syntaxes/es6-inline-html.json",
-        "embeddedLanguages": {
-          "meta.embedded.block.html": "html"
-        }
-      },
-      {
-        "injectTo": [
-          "source.js",
-          "source.js.jsx",
           "source.jsx",
-          "source.ts",
-          "source.tsx",
-          "source.sql"
+          "source.tsx"
         ],
-        "scopeName": "inline.es6-sql",
-        "path": "./syntaxes/es6-inline-sql.json",
+        "scopeName": "inline.es6-css",
+        "path": "./syntaxes/es6-inline-css.json",
         "embeddedLanguages": {
-          "meta.embedded.sql": "sql"
+          "meta.embedded.block.css": "css"
         }
       }
     ]

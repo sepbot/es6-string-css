@@ -18,7 +18,7 @@
 	},
 	"patterns": [
 		{
-			"begin": "(.?(sql))(`)",
+			"begin": "(.?(css))(`)",
 			"end": "(`)",
 			"beginCaptures": {
 				"1": {
@@ -30,12 +30,12 @@
 					"include": "source.ts#template-substitution-element"
 				},
 				{
-					"include": "source.sql"
+					"include": "source.css"
 				}
 			]
 		},
 		{
-			"begin": "(\\s?\\/?\\*?\\s?(sql|inline-sql)\\s?\\*?\\/?\\s?)(`)",
+			"begin": "(\\s?\\/?\\*?\\s?(css|inline-css)\\s?\\*?\\/?\\s?)(`)",
 			"beginCaptures": {
 				"1": {
 					"name": "comment.block"
@@ -47,12 +47,12 @@
 					"include": "source.ts#template-substitution-element"
 				},
 				{
-					"include": "source.sql"
+					"include": "source.css"
 				}
 			]
 		},
 		{
-			"begin": "(?<=\\=|\\:)\\s+(\\/\\/\\s?(sql|inline-sql)\\s?$)",
+			"begin": "(?<=\\=|\\:)\\s+(\\/\\/\\s?(css|inline-css)\\s?$)",
 			"beginCaptures": {
 				"1": {
 					"name": "comment.line"
@@ -68,10 +68,10 @@
 					"include": "source.ts#template-substitution-element"
 				},
 				{
-					"include": "source.sql"
+					"include": "source.css"
 				}
 			]
 		}
 	],
-	"scopeName": "inline.es6-sql"
+	"scopeName": "inline.es6-css"
 }
