@@ -2,7 +2,7 @@
   "name": "es6-string-css",
   "displayName": "es6-string-css",
   "description": "Highlight CSS language in ES6 template literals",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "publisher": "bashmish",
   "icon": "docs/logo.png",
   "engines": {
